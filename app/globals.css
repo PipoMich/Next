@@ -1,12 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 @import "tailwindcss";
 
 @theme {
-  --font-family-work-sans: "Work Sans", sans-serif;
   --radius: 0.5rem;
   /* Font weight tokens */
-  --font-weight-thin: 100;
+  --font-work-sans:  "Work Sans", sans-serif;
+  /* --font-weight-thin: 100;
   --font-weight-extralight: 200;
   --font-weight-light: 300;
   --font-weight-normal: 400;
@@ -14,7 +14,7 @@
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
   --font-weight-extrabold: 800;
-  --font-weight-black: 900;
+  --font-weight-black: 900; */
 
   /* Custom colors */
   --color-primary: #ee2b69;
@@ -31,117 +31,6 @@
   --shadow-100: 2px 2px 0px 0px rgb(0, 0, 0);
   --shadow-200: 2px 2px 0px 2px rgb(0, 0, 0);
   --shadow-300: 2px 2px 0px 2px rgb(238, 43, 105);
-}
-@font-face {
-  font-family: "Work Sans";
-  src: url("./fonts/WorkSans-Thin.ttf") format("truetype");
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Work Sans";
-  src: url("./fonts/WorkSans-ExtraLight.ttf") format("truetype");
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Work Sans";
-  src: url("./fonts/WorkSans-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Work Sans";
-  src: url("./fonts/WorkSans-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Work Sans";
-  src: url("./fonts/WorkSans-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Work Sans";
-  src: url("./fonts/WorkSans-SemiBold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Work Sans";
-  src: url("./fonts/WorkSans-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Work Sans";
-  src: url("./fonts/WorkSans-ExtraBold.ttf") format("truetype");
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Work Sans";
-  src: url("./fonts/WorkSans-Black.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-/* Custom font utilities */
-@utility font-work-sans {
-    font-family: var(--font-family-work-sans);
-}
-
-@utility font-thin {
-    font-weight: var(--font-weight-thin);
-}
-
-@utility font-extralight {
-    font-weight: var(--font-weight-extralight);
-}
-
-@utility font-light {
-    font-weight: var(--font-weight-light);
-}
-
-@utility font-normal {
-    font-weight: var(--font-weight-normal);
-}
-
-@utility font-medium {
-    font-weight: var(--font-weight-medium);
-}
-
-@utility font-semibold {
-    font-weight: var(--font-weight-semibold);
-}
-
-@utility font-bold {
-    font-weight: var(--font-weight-bold);
-}
-
-@utility font-extrabold {
-    font-weight: var(--font-weight-extrabold);
-}
-
-@utility font-black {
-    font-weight: var(--font-weight-black);
 }
 
 @utility flex-between {
@@ -222,7 +111,7 @@
 @utility tag {
   background-color: var(--color-secondary);
   padding: 0.75rem 1.5rem;
-  font-family: var(--font-family-work-sans);
+
   font-weight: 700;
   border-radius: 0.125rem;
   text-transform: uppercase;
@@ -251,7 +140,7 @@
   text-transform: uppercase;
   background-color: black;
   padding: 0.75rem 1.5rem;
-  font-family: var(--font-family-work-sans);
+
   font-weight: 800;
   color: white;
   font-size: 36px;
@@ -267,7 +156,6 @@
 }
 
 @utility sub-heading {
-  font-family: var(--font-family-work-sans);
   font-weight: var(--font-weight-medium);
   font-size: 20px;
   color: white;
@@ -440,7 +328,7 @@
   color: black;
   position: relative;
   box-shadow: var(--shadow-100);
-  font-family: var(--font-family-work-sans);
+
   font-weight: 500;
   transition: all 0.5s;
 
@@ -655,7 +543,6 @@
   padding: 0.5rem 1rem;
   border-radius: 50px;
 }
-
 
 .w-md-editor-toolbar {
   padding: 10px !important;
